@@ -1,4 +1,29 @@
 <?php
+
+/**
+ * Implements hook_theme().
+*/
+function abundio_theme($existing, $type, $theme, $path) {
+  $base = array(
+      'render element' => 'form',
+      'path' => drupal_get_path('theme', 'abundio') . '/templates/forms',
+  );
+
+  return array(
+      'optreden_node_form' => $base + array(
+          'template' => 'optreden-node-form',
+      ),
+  );
+}
+
+/**
+ * Preprocessor for  theme.
+ */
+function abundio_preprocess_optreden_node_form(&$variables) {
+  //print_r($variables);
+  /* Add or modify your variables */
+}
+
 /**
  * Return a themed breadcrumb trail.
  *

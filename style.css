@@ -508,11 +508,11 @@ input.form-text.error { border:2px solid red; }
 
 textarea { background:#e8e8e8; border:1px solid #f2f2f2;
 font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif;
-margin:0 20px 10px 0; padding:10px 5px; height:155px; font-size:100%; color:#5f6a5f;
+margin:0 20px 10px 0; padding:10px 5px;font-size:100%; color:#5f6a5f;
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  /* shadow */
 -webkit-box-shadow: 0px 2px 3px #bcbcbc inset;  -moz-box-shadow: 0px 2px 3px #bcbcbc inset;  box-shadow: 0px 2px 3px #bcbcbc inset;}
-
+/*  height:155px; deleted height from text-area */
 .filter-wrapper { border:1px solid #DDDDDD; border-top:none; }
 
 /*
@@ -623,3 +623,15 @@ text-transform: uppercase;
 .guestbook-comment { margin-bottom: 4px;padding: 2px 20px; border-radius: 8px;background-color: #FFC; }
 
 .views-table {margin-bottom: 42px;}
+
+.left-collumn {
+  float:left;
+  width: 45%;
+  padding-right:10px;
+}
+
+.right-collumn {
+  float:left;
+  width:45%;
+  overflow:hidden;
+}

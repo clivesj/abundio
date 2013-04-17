@@ -2,6 +2,9 @@
 #e7e7e7 = lichtblauwe letters in zwarte balk
 #008ab8 = KLM blauw
 #80C7A3 = teal -groen
+#99CC66 = li groen
+#336633 = donker groen
+#009900 = donker groen
 
 */
 body { font: 0.8em/165% "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; margin:0; padding:0; outline:0 none; vertical-align:baseline; }
@@ -62,10 +65,11 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 #header { clear:both; }
 
 #gp-header {
-  background-image: url('images/header_bg_248.png');
+  /*background-image: url('images/header_bg_248.png'); */
+  background: url(images/bg_raster_dark_gray_strip_flat.png) repeat-x;
 }
 
-#header-inside { margin: 0 auto; padding:10px 0; overflow:hidden; display: none; }  /*{ margin: 0 auto; padding:40px 0; overflow:hidden; } */
+#header-inside { margin: 0 auto; padding:10px 0; overflow:hidden;} /* display: none; }*/ /*{ margin: 0 auto; padding:40px 0; overflow:hidden; } */
 
 #header-menu { clear:both; }
 

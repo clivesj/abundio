@@ -2,6 +2,8 @@
 #e7e7e7 = lichtblauwe letters in zwarte balk
 #008ab8 = KLM blauw
 #80C7A3 = teal -groen
+#52ac61 = groen van status msg
+#46a055 = border van groen status msg
 #99CC66 = li groen
 #336633 = donker groen
 #009900 = donker groen
@@ -64,10 +66,10 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 */
 #header { clear:both; }
 
-#gp-header {
-  /*background-image: url('images/header_bg_248.png'); */
-  background: url(images/bg_raster_dark_gray_strip_flat.png) repeat-x;
-}
+#gp-header { background: url('images/header_bg_strip.png') repeat-x;}
+  /*<!--background-image: url('images/header_bg_248.png');-->*/
+ /* background: url(images/bg_raster_dark_gray_strip_flat.png) repeat-x;*/
+
 
 #header-inside { margin: 0 auto; padding:10px 0; overflow:hidden;} /* display: none; }*/ /*{ margin: 0 auto; padding:40px 0; overflow:hidden; } */
 
@@ -79,13 +81,10 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 #logo img { padding:0; margin:0; display:block; overflow:hidden; }
 
-#banner  { clear:both; /* border-bottom:1px solid #fcfcfc; */ overflow: hidden;margin-left:auto;margin-right:auto;width:800px;}
+#banner  { clear:both; /* border-bottom:1px solid #fcfcfc; */ overflow: hidden;margin-left:auto;margin-right:auto;width:600px;}
 
 #banner-container {
-
-/*background-color: #CCC;*/
-
-  background-color: rgba(238, 232, 232, 0.95);
+	padding-bottom: 20px;  /*background-color: #CCC;*/ /*background-color: rgba(238, 232, 232, 0.95);*/
   /* height: 440px; */
 }
 
@@ -115,7 +114,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 .footer-area.third { }
 
-.node.node-teaser { margin-bottom:20px; border-bottom: 1px solid #fff;} /* margin-bottom:60px */
+.node.node-teaser{ margin-bottom:30px; border-bottom: 1px solid #e7e7e7;} /* margin-bottom:60px */
 
 #footer-bottom { clear:both; overflow:hidden; padding:40px 0; }
 
@@ -128,8 +127,8 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 /*
 * Sidebar Blocks - Menus
 */
-.region-sidebar-first .block .content, .region-sidebar-second .block .content  { border:1px solid #ffffff;
--webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+.region-sidebar-first .block .content, .region-sidebar-second .block .content, .block-menu, block-views { border: 1px solid #ffffff;
+-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
 padding: 20px; overflow:hidden; margin:0 0 40px 0;
  /* shadow */
 -webkit-box-shadow: 0 2px 6px #efefef inset;  -moz-box-shadow:0 2px 6px #efefef inset;  box-shadow:0 2px 6px #efefef inset; }
@@ -309,6 +308,7 @@ padding: 20px; overflow:hidden; background:#ffffff; margin:0 0 30px 0;
  /* shadow */
 -webkit-box-shadow: 0 2px 6px #efefef inset;  -moz-box-shadow:0 2px 6px #efefef inset;  box-shadow:0 2px 6px #efefef inset;}
 
+#bezetting .sectie-head,
 #comments-title { border:1px solid #e7e7e7; padding:5px 10px; display:block; overflow:hidden; margin:0 0 30px 0;
 /* background */
 background: #fdfdfd;
@@ -327,7 +327,7 @@ background-image: linear-gradient(top, #fdfdfd 0%, #efefef 100%);
 /* IE6-9 */
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#efefef');
 /* radius */
--webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+/*-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;*/
 }
 
 #comments-title h2 { padding:0; margin:0; }
@@ -394,7 +394,7 @@ font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans
 /*
 * Messages
 */
-div.messages.status { background:#52ac61; border:1px solid #46a055; padding:10px; margin:0 0 15px 0; color:#ffffff; }
+div.messages.status { background:#80C7A3;  /*#52ac61;*/ border:1px solid #46a055; padding:10px; margin:0 0 15px 0; color:#ffffff; }
 
 div.messages.error { background:#d30000; border:1px solid #b50000; padding:10px; margin:0 0 15px 0; color:#ffffff; }
 
@@ -639,3 +639,8 @@ text-transform: uppercase;
   width:45%;
   overflow:hidden;
 }
+
+#first-time {display:none;}
+#block-gigplanning-welkom {margin-bottom: 30px;}
+
+table.views-view-grid td { vertical-align: top;}
